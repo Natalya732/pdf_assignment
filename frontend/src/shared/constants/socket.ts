@@ -1,0 +1,18 @@
+export const SOCKET_EVENTS = {
+  CONNECT: "connect",
+  DISCONNECT: "disconnect",
+  ERROR: "error",
+  CHAT_HISTORY: "chat_history",
+  MESSAGE_RECEIVED: "message_received",
+  JOIN_FILE: "join_file",
+  LEAVE_FILE: "leave_file",
+  PDF_CONTEXT_UPDATED: "pdf_context_updated",
+  SEND_MESSAGE: "send_message",
+  AI_RESPONSE: "ai_response",
+  USER_JOINED_FILE: "user_joined_file",
+  USER_LEFT_FILE: "user_left_file",
+  TYPING_START: "typing_start",
+  TYPING_STOP: "typing_stop",
+  USER_TYPING: "user_typing",
+  USER_STOPPED_TYPING: "user_stopped_typing",
+};
