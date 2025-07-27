@@ -4,7 +4,7 @@ A web app that lets users upload PDF files and chat with them using AI. Built us
 
 ## Live Demo
 
- [Add your deployed frontend URL here]
+https://chipper-dango-bbd5c6.netlify.app/
 
 ## Running Locally
 
@@ -15,10 +15,10 @@ A web app that lets users upload PDF files and chat with them using AI. Built us
 
 
 **Note**: If you don't have an OpenAI API key or MongoDB URI, you can use the deployed backend URL in frontend `.env`:
-```bash
-VITE_BACKEND_BASE=https://myapp.onrender.com
-```
 
+```bash
+VITE_BACKEND_BASE=https://pdf-assignment.onrender.com
+```
 
 ### Frontend Setup
 ```bash
@@ -36,7 +36,7 @@ Then run:
 npm run dev
 ```
 
-Frontend runs at http://localhost:3002
+Frontend runs at http://localhost:3000
 
 ### Backend Setup
 ```bash
@@ -68,6 +68,7 @@ npm run dev
 - Ask questions about the PDF content
 - Real-time AI responses via chat
 - Each response includes clickable citations to relevant PDF pages
+- Each document futher is used to generate a hash, that permits to attach a chat history with it.
 
 ## Project Structure
 
