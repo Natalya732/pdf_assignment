@@ -9,7 +9,16 @@ import {
   PDFPage,
 } from "../types";
 
-// Chat Session APIs
+export const healthCheck = async (): Promise<boolean> => {
+  try {
+    await axios.get(`${env.VITE_BACKEND_BASE}/health`);
+    return true;
+  } catch (error: any) {
+    console.error("Error health checking:", error);
+    return false;
+  }
+};
+
 export const createOrUpdateChatSession = async (
   data: CreateChatSessionRequest
 ): Promise<ChatSessionResponse> => {
